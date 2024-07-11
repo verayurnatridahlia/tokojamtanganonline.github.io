@@ -290,7 +290,7 @@ img {
 
 /* Hero Section */
 .hero {
-    background-image: url('images/bg1.jpg');
+    background-image: url('../images/bg1.jpg');
     background-size: cover;
     background-position: center;
     color: #fff;
