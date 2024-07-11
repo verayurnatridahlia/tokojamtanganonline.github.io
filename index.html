@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shop Jam Tangan</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Modern Watch Shop</a>
+            <button class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Modern Watch Shop</h2>
+            <p>Discover our collection of stylish and elegant watches.</p>
+        </div>
+    </section>
+
+    <!-- Produk Kami Section -->
+    <section class="produk-kami">
+        <h2>Produk Kami</h2>
+        <p>Temukan koleksi jam tangan stylish dan elegan kami:</p>
+    </section>
+
+    <hr>
+
+    <main>
+        <section id="products">
+            <div class="product" data-id="1" data-name="Jam Tangan 1" data-price="Rp 500,000" data-description="Jam tangan yang modern dan elegan, cocok untuk berbagai acara." data-image="images/jam_tangan_1.jpg">
+                <img src="images/jam_tangan_1.jpg" alt="Jam Tangan 1">
+                <h2>Jam Tangan 1</h2>
+                <p>Rp 500,000</p>
+                <button class="detail-btn">Lihat Detail</button>
+            </div>
+            <div class="product" data-id="2" data-name="Jam Tangan 2" data-price="Rp 750,000" data-description="Jam tangan yang mewah dan stylish, cocok untuk acara formal dan kasual." data-image="images/jam_tangan_2.jpg">
+                <img src="images/jam_tangan_2.jpg" alt="Jam Tangan 2">
+                <h2>Jam Tangan 2</h2>
+                <p>Rp 750,000</p>
+                <button class="detail-btn">Lihat Detail</button>
+            </div>
+            <div class="product" data-id="3" data-name="Jam Tangan 3" data-price="Rp 1,000,000" data-description="Jam tangan yang mewah dan stylish, cocok untuk acara formal dan kasual." data-image="images/jam_tangan_3.jpg">
+                <img src="images/jam_tangan_3.jpg" alt="Jam Tangan 3">
+                <h2>Jam Tangan 3</h2>
+                <p>Rp 1,000,000</p>
+                <button class="detail-btn">Lihat Detail</button>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feel free to reach out to us:</p>
+            <ul>
+                <li>Email: info@modernwatchshop.com</li>
+                <li>Phone: +1234567890</li>
+                <li>Address: 123 Street, City, Country</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Modern Watch Shop</p>
+    </footer>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modal-image" src="" alt="Product Image" style="width: 100%; max-width: 300px; margin-bottom: 20px;">
+            <h2 id="modal-title"></h2>
+            <p id="modal-price"></p>
+            <p id="modal-description"></p>
+            <label for="quantity">Jumlah:</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1">
+            <button id="add-to-cart-btn">Tambahkan ke Keranjang</button>
+        </div>
+    </div>
+
+    <!-- Notifikasi -->
+    <div id="notification" class="notification">Produk telah ditambahkan ke keranjang!</div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
